@@ -1,7 +1,11 @@
+import Challenge1TwoSum from "./components/challenge1_two_sum";
+
 function App() {
   return (
     <>
-      <div>setting up</div>
+      <div>
+        <Challenge1TwoSum />
+      </div>
     </>
   );
 }
