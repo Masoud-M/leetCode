@@ -27,9 +27,9 @@
 
 // Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 
-const challenge1_two_sum = () => {
-  const nums: number[] = [3, 2, 4];
-  const target: number = 6;
+function twoSum(nums: number[], target: number): number[] {
+  // const nums: number[] = [3, 2, 4];
+  // const target: number = 6;
   const result: number[] = [];
 
   for (let i = 0; i < nums.length; i++) {
@@ -38,12 +38,6 @@ const challenge1_two_sum = () => {
       result.push(i + 1);
     }
   }
-
-  return (
-    <div>
-      [{result[0]},{result[1]}]
-    </div>
-  );
-};
-
-export default challenge1_two_sum;
+  return result;
+}
+twoSum([3, 2, 4], 6);
